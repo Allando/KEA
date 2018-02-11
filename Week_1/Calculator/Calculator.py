@@ -7,7 +7,7 @@ def main():
     # choice = input("1) Calculate\n2) See previous calculations\n> ")
 
     # FOR DEBUGGING
-    choice = "2"
+    choice = "1"
 
     if choice == "1":
         # a = input("Input first value: ")
@@ -18,8 +18,8 @@ def main():
         VALUES FOR DEBUGGING
         """
         a = 2
-        b = 4
-        op = "+"
+        b = 0
+        op = "/"
 
         print(calculate(float(a), float(b), op))
     elif choice == "2":
@@ -46,10 +46,17 @@ def calculate(value_a, value_b, op):
 
         return result
     elif op == "/":
-        result = value_a / value_b
-        save_file(value_a, value_b, op, result)
+        try:
+            result = value_a / value_b
+            save_file(value_a, value_b, op, result)
 
-        return result
+            return result
+        except ZeroDivisionError:
+            print("u did wrong..")
+
+
+
+
 
 
 def save_file(value_a, value_b, op, result):
