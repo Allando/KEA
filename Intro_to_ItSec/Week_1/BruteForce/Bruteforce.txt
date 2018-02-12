@@ -1,0 +1,6 @@
+bffb72b5129ac3d555f4f94e6d9e7de2
+
+md5
+1 - 6 chars
+salt 3 <-- digits only
+lowercase

@@ -1,0 +1,34 @@
+NETWORKS 1
+
+Network Stack:
+    SENDER                  RECEIVER
+    Application             Application
+    Transport               Transport
+    Network                 Network
+    Data link               Data link
+    Physical -> -> -> -> -> Physical
+            Comunication ->
+
+Application: Supporting network pplication
+    FTP, SMTP, HTTP, DNS
+
+Transport: process-process data transfer
+    TCP, UDP
+
+Network: routing of datagrams from source to destination
+    IP, routing protocols
+
+Link: data transfer between adjacent network elements.
+    Ethernet, WIFI
+
+Physicals:
+
+
+Lab Assignment Wireshark:
+    question 1: How long did it take: -> 2.69; <- 2.79
+    question 2: What is the ip?: 128.119.245.12
+
+Assignment SMTP:
+    telnet
+    mail.guerrillamail.com 25
+
